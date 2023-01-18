@@ -1,13 +1,16 @@
 package br.com.microservice.api.domain;
 
-import jakarta.persistence.*;
-import lombok.*;
-// A notação Data já gera o Getter, Setter, EqualsAndHashCode, ToString
-@Entity
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Entity
 public class User {
 
     @Id
@@ -18,5 +21,4 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
-
 }

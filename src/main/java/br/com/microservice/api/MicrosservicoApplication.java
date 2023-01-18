@@ -9,8 +9,6 @@ public class MicrosservicoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MicrosservicoApplication.class, args);
-
-		User user = new User(1, "lucas", "lucas@email.com", "123");
 	}
 
 }
